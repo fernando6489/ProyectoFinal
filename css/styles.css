@@ -1,0 +1,28 @@
+/* Estilo general para los enlaces del navbar */
+.zero {
+  background: linear-gradient(to right, #007BFF, #00CFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.paper {
+  background: linear-gradient(to right, #28a745, #0bd10b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  color: white; /* color por defecto */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: linear-gradient(to right, #28a745, #0bd10b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

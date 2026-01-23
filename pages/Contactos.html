@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+    <meta name="author" content="Wladimir Vega Herrera">
+    <link rel="stylesheet" href="/css/styles.css">
+    	<!-- Favicon -->	
+	<link rel="icon" href="/images/icono.png">
+    <!-- Importar Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Importar Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <title>Contactos</title>
+</head>
+
+<body class="bg-gray-900">
+
+    <!-- NAV fijo -->
+    <header class="fixed inset-x-0 top-0 z-50 w-full bg-gray-900">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1 items-center space-x-2">
+                <a href="#" class="flex items-center space-x-2 -m-1.5 p-1.5">
+                    <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+                    <span class="text-xl font-bold">
+                        <span class="zero">Zero</span>
+                        <span class="paper">Paper</span>
+                    </span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                        class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="/index.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
+                <a href="/pages/Nosotros.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Nosotros</a>
+                <a href="/pages/Servicios.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Servicios</a>
+                <a href="/pages/Contactos.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Contactos</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner de Servicios -->
+    <section class="relative w-full h-[260px]">
+        <img src="/images/contacto.jpg" alt="Banner Servicios" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-white">CONTACTO</h1>
+        </div>
+    </section>
+
+    <!-- Contenedor en 2 columnas -->
+    <main class="bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-6">
+
+            <!-- Formulario -->
+            <form class="max-w-md mx-auto">
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_company" id="floating_company"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_company"
+                        class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Empresa
+                    </label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_name" id="floating_name"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_name"
+                        class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Nombre
+                    </label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_lastname" id="floating_lastname"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_lastname"
+                        class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Apellido
+                    </label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="email" name="floating_email" id="floating_email"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_email"
+                        class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Email
+                    </label>
+                </div>
+
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="tel" name="floating_phone" id="floating_phone"
+                            class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_phone"
+                            class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                            Teléfono de contacto
+                        </label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="floating_ext" id="floating_ext"
+                            class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                            placeholder=" " />
+                        <label for="floating_ext"
+                            class="absolute text-sm text-[#00CFFF] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[#00CFFF] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                            Ext.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="text-white bg-[#00CFFF] box-border border border-transparent hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    Submit
+                </button>
+            </form>
+
+            <!-- Tarjeta Plataformas Digitales -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-6 bg-white">
+
+
+                <!-- Información de contacto -->
+
+                <div class="space-y-6 mx-auto text-center md:text-center">
+                    <h2 class="text-2xl font-bold text-[#00CFFF]">Contáctanos</h2>
+
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Comunicación general</h3>
+                        <p class="text-gray-700">
+                            Para consultas generales y preguntas sobre oportunidades para colaborar con nosotros, por
+                            favor escríbenos a
+                            <a href="mailto:info@file.com.ec"
+                                class="text-[#00CFFF] hover:underline">info@zeropaper.com.ec</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Nuestro contacto directo</h3>
+                        <br>
+                        <a href="https://wa.me/593987701659" target="_blank"
+                            class="inline-block bg-[#28a745] text-white px-4 py-2 rounded-md hover:bg-green-600">
+                            Enviar WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-700 w-full">
+        <div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="font-semibold mb-2">Contacto</h3>
+                <p>Quito: Av. Interoceánica</p>
+                <p>Guayaquil: Vía a Daule</p>
+                <p>Tel: (+593) 987701659</p>
+                <p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
+                </p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <h3 class="font-semibold mb-2">Redes Sociales</h3>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-indigo-400">Facebook</a>
+                    <a href="#" class="hover:text-indigo-400">Twitter</a>
+                    <a href="#" class="hover:text-indigo-400">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+            <p class="text-center text-gray-400 text-xs">
+                ©2026 ZeroPaper. Diseñado por <span class="font-medium text-gray-300">@fernando6489</span>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

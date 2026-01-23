@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+  <meta name="author" content="Wladimir Vega Herrera">
+    <link rel="stylesheet" href="/css/styles.css">
+  <!-- Importar Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Importar Flowbite -->
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <title>Servicios</title>
+</head>
+
+<body class="bg-gray-900">
+
+  <!-- NAV fijo -->
+  <header class="fixed inset-x-0 top-0 z-50 w-full bg-gray-900">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1 items-center space-x-2">
+        <a href="#" class="flex items-center space-x-2 -m-1.5 p-1.5">
+           <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+          <span class="text-xl font-bold">
+            <span class="zero">Zero</span>
+            <span class="paper">Paper</span>
+          </span>
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+            class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="/index.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
+                <a href="/pages/Nosotros.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Nosotros</a>
+                <a href="/pages/Servicios.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Servicios</a>
+                <a href="/pages/Contactos.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Contactos</a>
+            </div>
+    </nav>
+  </header>
+
+  <!-- Banner de Servicios -->
+  <section class="relative w-full h-[260px]">
+    <img src="/images/servicios.jpg" alt="Banner Servicios" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <h1 class="text-4xl font-bold text-white">SERVICIOS</h1>
+    </div>
+  </section>
+
+  <!-- Información -->
+  <section class="w-full py-12 bg-gray-900">
+    <div class="px-12 text-justify">
+      <p class="mt-4 text-lg text-gray-400">
+        En ZeroPaper brindamos servicios especializados en la gestión integral de documentos físicos y digitales.
+        Nuestra experiencia, infraestructura y tecnología nos permiten ofrecer soluciones confiables y personalizadas
+        para cada cliente.
+      </p>
+      <p class="mt-4 text-lg text-gray-400">
+        Desde la custodia y digitalización documental hasta sistemas avanzados de consulta y automatización, trabajamos
+        para optimizar sus procesos y garantizar la integridad y disponibilidad de su información en todo momento.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenedor en 2 columnas -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-6">
+
+    <!-- Tarjeta Custodia Archivos-->
+    <a href="#"
+      class="flex flex-col items-center bg-gray-800 p-6 border border-gray-700 rounded-lg shadow-md md:flex-row">
+      <img class="object-cover w-full rounded-lg h-64 md:h-auto md:w-48 mb-4 md:mb-0"
+        src="/images/custodia.jpg" alt="">
+      <div class="flex flex-col justify-between md:p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#00CFFF]">
+          Custodia de Archivos
+        </h5>
+
+        <p class="mb-6 text-gray-400 text-justify">
+          Nuestra metodología en custodia y administración de archivos garantiza que su documentación estará disponible
+          en el momento que requiera siempre.
+        </p>
+      </div>
+    </a>
+
+    <!-- Tarjeta Plataformas Digitales -->
+    <a href="#"
+      class="flex flex-col items-center bg-gray-800 p-6 border border-gray-700 rounded-lg shadow-md md:flex-row">
+      <img class="object-cover w-full rounded-lg h-64 md:h-auto md:w-48 mb-4 md:mb-0"
+        src="/images/plataformas-digitales.webp" alt="">
+      <div class="flex flex-col justify-between md:p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#00CFFF]">
+          Plataformas Digitales
+        </h5>
+        <p class="mb-6 text-gray-400 text-justify">
+          Ofrecemos la solución ZeroPaper OnLine de administración de contenido empresarial (ECM) que combina dentro de
+          una misma solución, la administración integrada de documentos y la automatización de procesos empresariales
+          (BPM).
+        </p>
+      </div>
+    </a>
+
+    <!-- Tarjeta Digitalización Documentos -->
+    <a href="#"
+      class="flex flex-col items-center bg-gray-800 p-6 border border-gray-700 rounded-lg shadow-md md:flex-row">
+      <img class="object-cover w-full rounded-lg h-64 md:h-auto md:w-48 mb-4 md:mb-0"
+        src="/images/digitalizacion-documentos.jpg" alt="">
+      <div class="flex flex-col justify-between md:p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#00CFFF]">
+          Digitalización de Documentos
+        </h5>
+        <p class="mb-6 text-gray-400 text-justify">
+          Ofrecemos la transformación de grandes volúmenes de archivos físicos a documentos digitales, mediante un
+          método eficiente y seguro que previene la perdida de información, genera ahorro de espacios, otorga control y
+          permite un rápido acceso. Además, con OnBase disponemos de herramientas que facilitan la búsqueda y consulta
+          de los documentos digitalizados.
+        </p>
+      </div>
+    </a>
+
+    <!-- Tarjeta Gestion Procesos -->
+    <a href="#"
+      class="flex flex-col items-center bg-gray-800 p-6 border border-gray-700 rounded-lg shadow-md md:flex-row">
+      <img class="object-cover w-full rounded-lg h-64 md:h-auto md:w-48 mb-4 md:mb-0"
+        src="/images/gestion-procesos.webp" alt="">
+      <div class="flex flex-col justify-between md:p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#00CFFF]">
+          Gestion de Procesos
+        </h5>
+        <p class="mb-6 text-gray-400 text-justify">
+          Nuestro concepto de BPO (Business Process Outsorsing) posibilita crear e integrar procesos de negocio de una
+          forma más ágil, rápida y dinámica, garantizando mayor productividad.
+          Contamos con la experiencia y tecnología necesaria para que su empresa ejecute soluciones de automatización,
+          búsqueda y recuperación de información.
+        </p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="w-full text-center bg-neutral-primary-soft p-6 rounded-base shadow-xs">
+    <h5 class="mb-3 text-2xl tracking-tight font-semibold text-[#00CFFF]">
+      NECESITAS MÁS INFORMACIÓN, COMUNÍCATE CON NOSOTROS
+    </h5>
+    <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+
+      <a href="/pages/Contactos.html"
+        class="w-full sm:w-auto bg-dark hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3">
+
+        <svg class="me-2 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+          fill="currentColor">
+          <path
+            d="M502.3 190.8L327.4 338.2c-15.9 13.5-39.1 13.5-55 0L9.7 190.8C3.9 186.2 0 179.1 0 171.5V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v91.5c0 7.6-3.9 14.7-9.7 19.3zM0 240.5v191.5c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V240.5l-154.6 131.1c-35.7 30.3-87.1 30.3-122.8 0L0 240.5z" />
+        </svg>
+
+        <div class="text-left rtl:text-right text-gray-400">
+          <div class="text-xs">CONTÁCTANOS</div>
+          <div class="text-sm font-bold">Ir a página de contacto</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-gray-900 border-t border-gray-700 w-full">
+    <div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Contacto -->
+      <div>
+        <h3 class="font-semibold mb-2">Contacto</h3>
+        <p>Quito: Av. Interoceánica</p>
+        <p>Guayaquil: Vía a Daule</p>
+        <p>Tel: (+593) 987701659</p>
+        <p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
+        </p>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div>
+        <h3 class="font-semibold mb-2">Redes Sociales</h3>
+        <div class="flex flex-col space-y-2">
+          <a href="#" class="hover:text-indigo-400">Facebook</a>
+          <a href="#" class="hover:text-indigo-400">Twitter</a>
+          <a href="#" class="hover:text-indigo-400">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-gray-400 text-xs">
+        ©2026 ZeroPaper. Diseñado por <span class="font-medium text-gray-300">@fernando6489</span>
+      </p>
+    </div>
+
+  </footer>
+</body>
+
+</html>

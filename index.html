@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+	<meta name="author" content="Wladimir Vega Herrera">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Favicon -->	
+	<link rel="icon" href="/images/icono.png">
+	<!-- Importar Tailwind -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<!-- Importar Flowbite -->
+	<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+	<title>ZeroPaper</title>
+</head>
+
+<body class="bg-gray-900">
+
+	<!-- NAV fijo -->
+	<header class="fixed inset-x-0 top-0 z-50 w-full bg-gray-900">
+		<nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+			<div class="flex lg:flex-1 items-center space-x-2">
+				<a href="#" class="flex items-center space-x-2 -m-1.5 p-1.5">
+					<img src="images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+					<span class="text-xl font-bold">
+						<span class="zero">Zero</span>
+						<span class="paper">Paper</span>
+					</span>
+				</a>
+			</div>
+			<div class="flex lg:hidden">
+				<button type="button" command="show-modal" commandfor="mobile-menu"
+					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+					<span class="sr-only">Open main menu</span>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+						class="size-6">
+						<path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+			<div class="hidden lg:flex lg:gap-x-12">
+				<a href="#" class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
+				<a href="pages/Nosotros.html"
+					class="hover:text-indigo-400 text-sm font-semibold text-white">Nosotros</a>
+				<a href="pages/Servicios.html"
+					class="hover:text-indigo-400 text-sm font-semibold text-white">Servicios</a>
+				<a href="pages/Contactos.html"
+					class="hover:text-indigo-400 text-sm font-semibold text-white">Contactos</a>
+			</div>
+		</nav>
+	</header>
+
+	 <!-- Banner de Servicios -->
+  <section class="relative w-full h-[460px]">
+    <img src="/images/inicio.jpg" alt="Banner Servicios" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+       </div>
+  </section>
+  
+	<!-- Contenido principal con espacio para el nav fijo -->
+	<main class="relative isolate px-6 pt-24 lg:px-8">
+		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-1 text-center">
+			<h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+				ZeroPaper
+			</h1>
+			<p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl text-justify">
+				Somos una empresa líder en Gestión de Documental. Pionera, innovadora y solvente. Con el compromiso de
+				ofrecer soluciones integrales de alta calidad, acompañada de una inversión permanente que ofrecemos
+				tanto la custodia del archivo físico, como la digitalización y almacenamiento en plataformas digitales.
+			</p>
+			<br>
+			<img src="images/Home-ZeroPaper.jpeg" alt="ImagenZeroPaper">
+			<div class="mt-10 flex items-center justify-center gap-x-6">
+				<a href="#"
+					class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400">
+					Get started
+				</a>
+				<a href="pages/Nosotros.html" class="text-sm font-semibold text-white">Ver más →</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="bg-gray-900 border-t border-gray-700 w-full">
+		<div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
+
+			<!-- Contacto -->
+			<div>
+				<h3 class="font-semibold mb-2">Contacto</h3>
+				<p>Quito: Av. Interoceánica</p>
+				<p>Guayaquil: Vía a Daule</p>
+				<p>Tel: (+593) 987701659</p>
+				<p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
+				</p>
+			</div>
+
+			<!-- Redes Sociales -->
+			<div>
+				<h3 class="font-semibold mb-2">Redes Sociales</h3>
+				<div class="flex flex-col space-y-2">
+					<a href="#" class="hover:text-indigo-400">Facebook</a>
+					<a href="#" class="hover:text-indigo-400">Twitter</a>
+					<a href="#" class="hover:text-indigo-400">LinkedIn</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="border-t border-gray-700 py-4">
+			<p class="text-center text-gray-400 text-xs">
+				©2026 ZeroPaper. Todos los derechos reservados.
+			</p>
+		</div>
+
+	</footer>
+</body>
+
+</html>
