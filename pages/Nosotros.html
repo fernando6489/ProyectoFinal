@@ -7,6 +7,10 @@
     <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
     <meta name="author" content="Wladimir Vega Herrera">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="/js/main.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/images/icono.png">
     <!-- Importar Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Importar Flowbite -->
@@ -21,7 +25,7 @@
         <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
             <div class="flex lg:flex-1 items-center space-x-2">
                 <a href="#" class="flex items-center space-x-2 -m-1.5 p-1.5">
-                     <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+                    <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
                     <span class="text-xl font-bold">
                         <span class="zero">Zero</span>
                         <span class="paper">Paper</span>
@@ -40,14 +44,33 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="/index.html"
-                    class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
+                <a href="/index.html" class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
                 <a href="/pages/Nosotros.html"
                     class="hover:text-indigo-400 text-sm font-semibold text-white">Nosotros</a>
                 <a href="/pages/Servicios.html"
                     class="hover:text-indigo-400 text-sm font-semibold text-white">Servicios</a>
+                <a href="/pages/Productos.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Productos</a>
                 <a href="/pages/Contactos.html"
                     class="hover:text-indigo-400 text-sm font-semibold text-white">Contactos</a>
+            </div>
+            <!-- Botón buscar -->
+            <div class="flex lg:ml-6">
+                <button id="searchToggle"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white flex items-center">
+                    <span class="sr-only">Search</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                        class="size-6">
+                        <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Cuadro de texto oculto -->
+                <form id="searchForm" class="hidden ml-2">
+                    <input type="text" id="searchInput" placeholder="Buscar en la web..." class="w-64 rounded-md border border-gray-700 bg-gray-800 py-2 px-4 text-sm text-white 
+             placeholder-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" />
+                </form>
             </div>
         </nav>
     </header>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+    <meta name="author" content="Wladimir Vega Herrera">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="/js/main.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/images/icono.png">
+    <!-- Importar Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Importar Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <title>Productos</title>
+</head>
+
+<body class="bg-gray-900">
+
+    <!-- NAV fijo -->
+    <header class="fixed inset-x-0 top-0 z-50 w-full bg-gray-900">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1 items-center space-x-2">
+                <a href="#" class="flex items-center space-x-2 -m-1.5 p-1.5">
+                    <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+                    <span class="text-xl font-bold">
+                        <span class="zero">Zero</span>
+                        <span class="paper">Paper</span>
+                    </span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                        class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="/index.html" class="hover:text-indigo-400 text-sm font-semibold text-white">Inicio</a>
+                <a href="/pages/Nosotros.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Nosotros</a>
+                <a href="/pages/Servicios.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Servicios</a>
+                <a href="/pages/Productos.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Productos</a>
+                <a href="/pages/Contactos.html"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white">Contactos</a>
+            </div>
+            <!-- Botón buscar -->
+            <div class="flex lg:ml-6">
+                <button id="searchToggle"
+                    class="hover:text-indigo-400 text-sm font-semibold text-white flex items-center">
+                    <span class="sr-only">Search</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                        class="size-6">
+                        <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Cuadro de texto oculto -->
+                <form id="searchForm" class="hidden ml-2">
+                    <input type="text" id="searchInput" placeholder="Buscar en la web..." class="w-64 rounded-md border border-gray-700 bg-gray-800 py-2 px-4 text-sm text-white 
+             placeholder-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" />
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner de Servicios -->
+    <section class="relative w-full h-[260px]">
+        <img src="/images/productos.jpg" alt="Banner Servicios" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-white">PRODUCTOS</h1>
+        </div>
+    </section>
+
+    <!-- Contenedor en 2 columnas -->
+    <main class="bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-6 justify-items-center">
+
+            <!-- Tarjeta número 01 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_00_ix100.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escaneo de documentos A4 en tan solo 5 segundos</li>
+                            <li>-> Digitalización instantánea con solo tocar un botón</li>
+                            <li>-> Funcionalidad Wi-Fi integrada</li>
+                            <li>-> Posibilidad de escaneo mediante USB</li>
+                            <li>-> Creación automática de archivos PDF</li>
+                            <li>-> Permite escanear documentos en A3</li>
+                            <li>-> Software ScanSnap Manager</li>
+                            <li>-> Incluye batería</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        ScanSnap iX-100
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$295.67</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 02 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_01_ix2400.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner A4 USB 3.0 y Red Gigabit</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> 45/90 páginas por minuto simplex o dúplex</li>
+                            <li>-> Alimentador de documentos de 80 hojas</li>
+                            <li>-> Touch Screen Personlizable</li>
+                            <li>-> Conexión WiFi y USB Nueva Ver 3.0</li>
+                            <li>-> Ideal para empresas y oficinas</li>
+                            <li>-> Sugerido de 1 a 4000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        ScanSnap iX-2400
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$365.82</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 03 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_02_ix2500.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner A4 USB 3.2 y Red Gigabit</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> 45/90 páginas por minuto simplex o dúplex</li>
+                            <li>-> Alimentador de documentos de 100 hojas</li>
+                            <li>-> Touch Screen Personlizable</li>
+                            <li>-> Conexión WiFi y USB Nueva Ver 3.2</li>
+                            <li>-> Ideal para empresas y oficinas</li>
+                            <li>-> Sugerido de 1 a 4500 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        ScanSnap iX-2500
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$465.82</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 04 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_03_fi7600.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner de escritorio A4 & A3</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> 100 a 200 páginas por minuto</li>
+                            <li>-> Alimentador de originales de 300 hojas</li>
+                            <li>-> Compatibilidad Windows + MAC</li>
+                            <li>-> Software profesional incluido para OCR </li>
+                            <li>-> Lee códigos de barra y códigos QR</li>
+                            <li>-> Sugerido de 1 a 43.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-7600
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$1700.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 05 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_04_fi7700.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner de escritorio A4 & A3</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> 100 a 200 páginas por minuto</li>
+                            <li>-> Alimentador de originales de 300 hojas</li>
+                            <li>-> Incluye Cama Plana</li>
+                            <li>-> Software profesional incluido para OCR</li>
+                            <li>-> Lee códigos de barra y códigos QR</li>
+                            <li>-> Sugerido de 1 a 43.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-7700
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$2000.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 06 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_05_fi8040.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner dúplex a doble cara</li>
+                            <li>-> 40/80 Páginas por minuto A4</li>
+                            <li>-> Touch Screen personalizado</li>
+                            <li>-> Hasta 20 destinos de un sólo click</li>
+                            <li>-> Envío de e-mail y/o carpetas</li>
+                            <li>-> Incluye software de captura GRATIS</li>
+                            <li>-> Detección de tamaño de Hoja</li>
+                            <li>-> Sugerido de 1 a 6.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-8040
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$2300.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 07 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_06_fi8170.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner de escritorio A4</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> Velocidad de 90 a 180 páginas simple o dúplex</li>
+                            <li>-> Alimentador de documentos para 100 hojas</li>
+                            <li>-> Compatibilidad Windows + MAC</li>
+                            <li>-> Software profesional incluido para OCR</li>
+                            <li>-> Lee códigos de barra y códigos QR</li>
+                            <li>-> Sugerido de 1 a 14.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-8170
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$2600.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 08 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_07_fi8270.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner de escritorio A4</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> Velocidad de 70 a 160 páginas simple o dúplex</li>
+                            <li>-> Alimentador de documentos para 100 hojas</li>
+                            <li>-> Compatibilidad Windows + MAC</li>
+                            <li>-> Software profesional incluido para OCR </li>
+                            <li>-> Lee códigos de barra y códigos QR</li>
+                            <li>-> Sugerido de 1 a 13.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-8270
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$2900.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 09 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_08_fi8950.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner de escritorio A4 & A3</li>
+                            <li>-> Digitaliza a doble cara (función dúplex)</li>
+                            <li>-> 150 a 300 páginas por minuto</li>
+                            <li>-> Alimentador de originales de 700 hojas</li>
+                            <li>-> Sistema realineación documental</li>
+                            <li>-> Software profesional incluido para OCR</li>
+                            <li>-> Lee códigos de barra y códigos QR</li>
+                            <li>-> Sugerido de 1 a 130.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu fi-8950
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$3200.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta número 10 -->
+            <div class="flex flex-col items-center justify-center w-100 max-w-sm mx-auto">
+                <div class="relative w-full h-75 bg-gray-300 bg-center bg-cover rounded-lg shadow-md group"
+                    style="background-image: url(/images/scan_09_sv600.jpg)">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center 
+                    bg-white dark:bg-gray-800 rounded-lg
+                    opacity-0 transition-opacity duration-300 group-hover:opacity-100 px-4 z-0">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-3">Características</h2>
+                        <ul class="text-sm text-gray-700 dark:text-gray-300 text-left leading-relaxed">
+                            <li>-> Escáner Satelital para libros</li>
+                            <li>-> Cuello alto para libros ó empastados</li>
+                            <li>-> Formatos A3, A4, A5 y más</li>
+                            <li>-> Cuello 35 cm de alto aproximadamente</li>
+                            <li>-> Detección de Tamaño de Hoja</li>
+                            <li>-> Detección ce B&N o Color</li>
+                            <li>-> Borrado de sombra hasta 40 x 30 cm</li>
+                            <li>-> Sugerido de 1 a 1.000 páginas/día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800 relative z-10">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        Ricoh Fujitsu SV-600
+                    </h3>
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span class="font-bold text-gray-800 dark:text-gray-200">$649.00</span>
+                        <button
+                            class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-700 w-full">
+        <div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="font-semibold mb-2">Contacto</h3>
+                <p>Quito: Av. Interoceánica</p>
+                <p>Guayaquil: Vía a Daule</p>
+                <p>Tel: (+593) 987701659</p>
+                <p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
+                </p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <h3 class="font-semibold mb-2">Redes Sociales</h3>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-indigo-400">Facebook</a>
+                    <a href="#" class="hover:text-indigo-400">Twitter</a>
+                    <a href="#" class="hover:text-indigo-400">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+            <p class="text-center text-gray-400 text-xs">
+                ©2026 ZeroPaper. Diseñado por <span class="font-medium text-gray-300">@fernando6489</span>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
