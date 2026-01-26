@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+    <meta name="author" content="Wladimir Vega Herrera">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="/js/main.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/images/icono.png">
+    <!-- Importar Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Importar Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <title>Nosotros</title>
+</head>
+
+<body class="bg-gray-900">
+
+    <!-- Aquí se insertará el nav -->
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("/pages/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+    <br>
+    <br>
+    <br>
+    <script>
+        function rotar_imagen() {
+            var tiempo = 1500;//tiempo en milisegundos
+            var arrImagenes =
+                [
+                    '/images/iso9001.png',
+                    '/images/iso14001.png',
+                    '/images/iso27001.png',
+                ];//LINK IMAGENES BANNER
+            _img = document.getElementById('rotativo');//cargar la 1er imagen
+            _img.src = arrImagenes[0];
+            var i = 1;
+            setInterval(function () {
+                _img.src = arrImagenes[i];
+                i = (i == arrImagenes.length - 1) ? 0 : (i + 1);
+            }, tiempo);
+        }
+    </script>
+    <center>
+
+        <body onload="rotar_imagen();">
+            <img id="rotativo" width="250" height="315" />
+        </body>
+    </center>
+
+    <!-- Contenido principal con espacio para el nav fijo -->
+    <!-- Contenido principal -->
+    <main class="relative isolate px-4 pt-4 lg:px-8">
+        <div id="certificaciones" class="mx-auto py-32 lg:py-1 text-center">
+            <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+                NUESTRAS CERTIFICACIONES
+            </h1>
+            <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl text-justify">
+                En ZeroPaper nuestro compromiso con la excelencia y la mejora continua. Desde el año 2015,
+                mantenemos la certificación ISO 9001:2015, garantizando procesos de gestión de calidad que aseguran
+                servicios confiables, eficientes y orientados a la satisfacción de nuestros clientes.
+                <br><br>
+                En este 2025, damos un paso más en nuestro compromiso institucional incorporando la certificación
+                ISO 27001:2022, que refuerza la gestión de la seguridad de la información y la protección de los datos
+                que nos confían nuestros clientes.
+                Ambas certificaciones reflejan nuestro propósito de operar bajo los más altos estándares
+                internacionales,
+                consolidando la confianza y la transparencia que caracterizan a ZeroPaper.
+                <br>
+            </p>
+            <img src="/images/iso.png" alt="iso" class="mx-auto">
+        </div>
+
+        <!-- Sección ISO 9001 -->
+        <section id="iso9001" class="mx-auto max-w-3xl py-6 text-white">
+            <h2 class="text-3xl font-bold mb-4">ISO 9001:2015</h2>
+            <p class="text-gray-400 text-lg text-justify">
+                La certificación ISO 9001 transmite un mensaje claro acerca de la organización: compromiso con la
+                calidad, mejora continua y satisfacción del cliente. Esta percepción fortalece la marca, genera
+                confianza en partes interesadas clave, como clientes, inversionistas, empleados o reguladores, y
+                posiciona a la empresa como referente en su sector. En mercados donde la competencia es intensa, una
+                buena reputación marca la diferencia.
+            </p>
+        </section>
+
+        <!-- Sección ISO 14001 -->
+        <section id="iso14001" class="mx-auto max-w-3xl py-6 text-white">
+            <h2 class="text-3xl font-bold mb-4">ISO 14001:2022</h2>
+            <p class="text-gray-400 text-lg text-justify">
+                Este estándar internacional asegura que nuestras operaciones se desarrollen minimizando el impacto
+                ambiental, promoviendo el uso eficiente de los recursos y fomentando prácticas sostenibles. Con esta
+                certificación, ZeroPaper refuerza su responsabilidad social y ambiental, alineando sus procesos con
+                políticas globales de sostenibilidad y contribuyendo activamente a la protección del entorno para las
+                futuras generaciones.
+            </p>
+        </section>
+
+        <!-- Sección ISO 27001 -->
+        <section id="iso27001" class="mx-auto max-w-3xl py-6 text-white">
+            <h2 class="text-3xl font-bold mb-4">ISO 27001:2022</h2>
+            <p class="text-gray-400 text-lg text-justify">
+                La certificación ISO 14001:2022 demuestra nuestro compromiso con la gestión ambiental responsable.
+                La certificación ISO 27001:2022 refuerza nuestro compromiso con la seguridad de la información,
+                protegiendo los datos de nuestros clientes bajo los más altos estándares internacionales. Este
+                estándar garantiza que contamos con políticas, procesos y controles que previenen riesgos, aseguran
+                la confidencialidad, integridad y disponibilidad de la información, y fortalecen la confianza de
+                quienes depositan en nosotros sus documentos y datos más sensibles.
+
+            </p>
+        </section>
+    </main>
+
+
+    <footer class="bg-gray-900 border-t border-gray-700 w-full">
+        <div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="font-semibold mb-2">Contacto</h3>
+                <p>Quito: Av. Interoceánica</p>
+                <p>Guayaquil: Vía a Daule</p>
+                <p>Tel: (+593) 987701659</p>
+                <p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
+                </p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <h3 class="font-semibold mb-2">Redes Sociales</h3>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-indigo-400">Facebook</a>
+                    <a href="#" class="hover:text-indigo-400">Twitter</a>
+                    <a href="#" class="hover:text-indigo-400">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+            <p class="text-center text-gray-400 text-xs">
+                ©2026 ZeroPaper. Todos los derechos reservados.
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

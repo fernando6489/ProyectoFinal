@@ -1,0 +1,39 @@
+<!-- nav.html -->
+<header class="fixed inset-x-0 top-0 z-50 w-full bg-gray-900">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1 items-center space-x-2">
+            <a href="/" class="flex items-center space-x-2 -m-1.5 p-1.5">
+                <img src="/images/Logo-ZeroPaper.png" alt="ZeroPaper Logo" class="h-8 w-auto" />
+                <span class="text-xl font-bold">
+                    <span class="zero">Zero</span>
+                    <span class="paper">Paper</span>
+                </span>
+            </a>
+        </div>
+
+        <!-- Menú principal -->
+        <ul class="hidden lg:flex lg:gap-x-12 text-sm font-semibold text-white">
+            <li><a href="/" class="hover:text-indigo-400">Inicio</a></li>
+            <li><a href="/pages/Nosotros.html" class="hover:text-indigo-400">Nosotros</a></li>
+            <li><a href="/pages/Servicios.html" class="hover:text-indigo-400">Servicios</a></li>
+            <li><a href="/pages/Productos.html" class="hover:text-indigo-400">Productos</a></li>
+
+            <!-- Submenú -->
+            <li class="relative group">
+                <a href="/pages/Certificaciones.html" class="hover:text-indigo-400 flex items-center">
+                    Certificaciones
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-gray-800 text-white mt-2 rounded-md shadow-lg w-40">
+                    <li><a href="#iso9001" class="block px-4 py-2 hover:bg-indigo-500">ISO 9001</a></li>
+                    <li><a href="#iso14001" class="block px-4 py-2 hover:bg-indigo-500">ISO 14001</a></li>
+                    <li><a href="#iso27001" class="block px-4 py-2 hover:bg-indigo-500">ISO 27001</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/pages/Contactos.html" class="hover:text-indigo-400">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
