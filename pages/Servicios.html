@@ -152,38 +152,15 @@
 
   </main>
 
-  <footer class="bg-gray-900 border-t border-gray-700 w-full">
-    <div class="max-w-screen-xl mx-auto px-6 py-6 text-white text-sm grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <!-- Contacto -->
-      <div>
-        <h3 class="font-semibold mb-2">Contacto</h3>
-        <p>Quito: Av. Interoceánica</p>
-        <p>Guayaquil: Vía a Daule</p>
-        <p>Tel: (+593) 987701659</p>
-        <p>Mail: <a href="mailto:info@zeropaper.com.ec" class="hover:text-indigo-400">info@zeropaper.com.ec</a>
-        </p>
-      </div>
-
-      <!-- Redes Sociales -->
-      <div>
-        <h3 class="font-semibold mb-2">Redes Sociales</h3>
-        <div class="flex flex-col space-y-2">
-          <a href="#" class="hover:text-indigo-400">Facebook</a>
-          <a href="#" class="hover:text-indigo-400">Twitter</a>
-          <a href="#" class="hover:text-indigo-400">LinkedIn</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="border-t border-gray-700 py-4">
-      <p class="text-center text-gray-400 text-xs">
-        ©2026 ZeroPaper. Diseñado por <span class="font-medium text-gray-300">@fernando6489</span>
-      </p>
-    </div>
-
-  </footer>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("/pages/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ix100",
+    "nombre": "ScanSnap iX-100",
+    "precio": 295.67,
+    "imagen": "/images/scan_00_ix100.jpg",
+    "categoria": "Escáner portátil",
+    "descripcion": [
+      "Escaneo de documentos A4 en 5 segundos",
+      "Digitalización con un solo botón",
+      "Wi-Fi integrado",
+      "Conexión USB",
+      "PDF automático",
+      "Escaneo A3",
+      "Software ScanSnap Manager",
+      "Incluye batería"
+    ]
+  },
+  {
+    "id": "ix2400",
+    "nombre": "ScanSnap iX-2400",
+    "precio": 365.82,
+    "imagen": "/images/scan_01_ix2400.jpg",
+    "categoria": "Escáner oficina",
+    "descripcion": [
+      "Escáner A4 USB 3.0 y red Gigabit",
+      "Dúplex automático",
+      "45/90 ppm",
+      "ADF 80 hojas",
+      "Pantalla táctil",
+      "WiFi y USB 3.0",
+      "Uso empresarial",
+      "Hasta 4000 páginas/día"
+    ]
+  },
+  {
+    "id": "ix2500",
+    "nombre": "ScanSnap iX-2500",
+    "precio": 465.82,
+    "imagen": "/images/scan_02_ix2500.jpg",
+    "categoria": "Escáner oficina",
+    "descripcion": [
+      "USB 3.2 y red Gigabit",
+      "Dúplex automático",
+      "45/90 ppm",
+      "ADF 100 hojas",
+      "Pantalla táctil",
+      "WiFi y USB 3.2",
+      "Uso empresarial",
+      "Hasta 4500 páginas/día"
+    ]
+  },
+  {
+    "id": "fi7600",
+    "nombre": "Ricoh Fujitsu fi-7600",
+    "precio": 1700.00,
+    "imagen": "/images/scan_03_fi7600.jpg",
+    "categoria": "Escáner industrial",
+    "descripcion": [
+      "Escáner A4 y A3",
+      "Dúplex",
+      "100 a 200 ppm",
+      "ADF 300 hojas",
+      "Windows y Mac",
+      "OCR profesional",
+      "Lectura QR y códigos de barra",
+      "Hasta 43000 páginas/día"
+    ]
+  },
+  {
+    "id": "fi7700",
+    "nombre": "Ricoh Fujitsu fi-7700",
+    "precio": 2000.00,
+    "imagen": "/images/scan_04_fi7700.jpg",
+    "categoria": "Escáner industrial",
+    "descripcion": [
+      "Escáner A4 y A3",
+      "Dúplex",
+      "100 a 200 ppm",
+      "ADF 300 hojas",
+      "Incluye cama plana",
+      "OCR profesional",
+      "Lectura QR y códigos de barra",
+      "Hasta 43000 páginas/día"
+    ]
+  },
+  {
+    "id": "fi8040",
+    "nombre": "Ricoh Fujitsu fi-8040",
+    "precio": 2300.00,
+    "imagen": "/images/scan_05_fi8040.jpg",
+    "categoria": "Escáner empresarial",
+    "descripcion": [
+      "Dúplex",
+      "40/80 ppm",
+      "Pantalla táctil",
+      "20 destinos rápidos",
+      "Envío a email y carpetas",
+      "Software incluido",
+      "Detección de tamaño",
+      "Hasta 6000 páginas/día"
+    ]
+  },
+  {
+    "id": "fi8170",
+    "nombre": "Ricoh Fujitsu fi-8170",
+    "precio": 2600.00,
+    "imagen": "/images/scan_06_fi8170.jpg",
+    "categoria": "Escáner empresarial",
+    "descripcion": [
+      "Escáner A4",
+      "Dúplex",
+      "90 a 180 ppm",
+      "ADF 100 hojas",
+      "Windows y Mac",
+      "OCR profesional",
+      "Lectura QR",
+      "Hasta 14000 páginas/día"
+    ]
+  },
+  {
+    "id": "fi8270",
+    "nombre": "Ricoh Fujitsu fi-8270",
+    "precio": 2900.00,
+    "imagen": "/images/scan_07_fi8270.jpg",
+    "categoria": "Escáner empresarial",
+    "descripcion": [
+      "Escáner A4",
+      "Dúplex",
+      "70 a 160 ppm",
+      "ADF 100 hojas",
+      "Windows y Mac",
+      "OCR profesional",
+      "Lectura QR",
+      "Hasta 13000 páginas/día"
+    ]
+  },
+  {
+    "id": "fi8950",
+    "nombre": "Ricoh Fujitsu fi-8950",
+    "precio": 3200.00,
+    "imagen": "/images/scan_08_fi8950.jpg",
+    "categoria": "Escáner industrial",
+    "descripcion": [
+      "Escáner A4 y A3",
+      "Dúplex",
+      "150 a 300 ppm",
+      "ADF 700 hojas",
+      "Realineación automática",
+      "OCR profesional",
+      "Lectura QR",
+      "Hasta 130000 páginas/día"
+    ]
+  },
+  {
+    "id": "sv600",
+    "nombre": "Ricoh Fujitsu SV-600",
+    "precio": 649.00,
+    "imagen": "/images/scan_09_sv600.jpg",
+    "categoria": "Escáner libros",
+    "descripcion": [
+      "Escáner satelital",
+      "Ideal para libros",
+      "Formatos A3, A4, A5",
+      "Cuello de 35 cm",
+      "Detección de tamaño",
+      "Color y B/N",
+      "Elimina sombras",
+      "Hasta 1000 páginas/día"
+    ]
+  }
+]

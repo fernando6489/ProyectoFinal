@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="digitalizacion, cero papel, archivo, custodia">
+    <meta name="author" content="Wladimir Vega Herrera">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="js/main.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/images/icono.png">
+    <!-- Importar Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Importar Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <title>Tienda</title>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen p-6">
+
+    <!-- Aquí se insertará el nav -->
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("/pages/nav.html")
+            .then(res => res.text())
+            .then(html => document.getElementById("nav-placeholder").innerHTML = html);
+    </script>
+
+    <main class="max-w-5xl mx-auto mt-24 bg-gray-800 p-6 rounded-lg shadow-lg">
+
+        <h1 class="text-3xl font-bold mb-6">🛒 Carrito de Compras</h1>
+
+        <div class="overflow-x-auto">
+            <table class="w-full border border-gray-700 rounded-lg">
+                <thead class="bg-gray-700">
+                    <tr>
+                        <th class="p-3 text-left">Producto</th>
+                        <th class="p-3 text-center">Precio</th>
+                        <th class="p-3 text-center">Cantidad</th>
+                        <th class="p-3 text-center">Total</th>
+                        <th class="p-3 text-center">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table"></tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-between items-center mt-6">
+            <h2 class="text-xl font-bold">
+                Total: <span class="text-green-400">$<span id="total">0.00</span></span>
+            </h2>
+
+            <div class="flex gap-4">
+                <button onclick="vaciarCarrito()" class="bg-red-600 hover:bg-red-500 px-6 py-2 rounded font-semibold">
+                    Vaciar carrito
+                </button>
+
+                <button onclick="finalizarCompra()"
+                    class="bg-green-600 hover:bg-green-500 px-6 py-2 rounded font-semibold">
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Script tienda -->
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const table = document.getElementById("cart-table");
+        const totalSpan = document.getElementById("total");
+
+        function renderCart() {
+            table.innerHTML = "";
+            let total = 0;
+
+            if (cart.length === 0) {
+                table.innerHTML = `
+      <tr>
+        <td colspan="5" class="p-6 text-center text-gray-400">
+          El carrito está vacío 🛒
+        </td>
+      </tr>`;
+                totalSpan.textContent = "0.00";
+                return;
+            }
+
+            cart.forEach((p, index) => {
+                const subtotal = p.price * p.qty;
+                total += subtotal;
+
+                table.innerHTML += `
+      <tr class="border-b border-gray-700 hover:bg-gray-700">
+        <td class="p-3">${p.name}</td>
+        <td class="p-3 text-center">$${p.price.toFixed(2)}</td>
+        <td class="p-3 text-center">
+          <div class="flex justify-center gap-2">
+            <button onclick="changeQty(${index}, -1)" class="px-2 bg-gray-600 rounded">-</button>
+            <span>${p.qty}</span>
+            <button onclick="changeQty(${index}, 1)" class="px-2 bg-gray-600 rounded">+</button>
+          </div>
+        </td>
+        <td class="p-3 text-center">$${subtotal.toFixed(2)}</td>
+        <td class="p-3 text-center">
+          <button onclick="removeItem(${index})" class="bg-red-600 px-3 py-1 rounded">🗑</button>
+        </td>
+      </tr>`;
+            });
+
+            totalSpan.textContent = total.toFixed(2);
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+
+        function changeQty(index, change) {
+            cart[index].qty += change;
+            if (cart[index].qty <= 0) cart.splice(index, 1);
+            renderCart();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function vaciarCarrito() {
+            if (cart.length === 0) {
+                alert("El carrito ya está vacío 🛒");
+                return;
+            }
+            if (confirm("¿Seguro que deseas vaciar el carrito?")) {
+                cart = [];
+                localStorage.removeItem("cart");
+                renderCart();
+            }
+        }
+
+        function finalizarCompra() {
+            if (cart.length === 0) {
+                alert("El carrito está vacío 🛒");
+                return;
+            }
+
+            alert("✅ Compra realizada con éxito");
+            cart = [];
+            localStorage.removeItem("cart");
+            renderCart();
+        }
+
+        renderCart();
+    </script>
+
+    <!-- Footer -->
+    <div id="footer-placeholder" class="mt-10"></div>
+    <script>
+        fetch("/pages/footer.html")
+            .then(res => res.text())
+            .then(html => document.getElementById("footer-placeholder").innerHTML = html);
+    </script>
+</body>
+
+</html>
